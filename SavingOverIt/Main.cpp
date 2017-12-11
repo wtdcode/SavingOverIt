@@ -135,7 +135,12 @@ bool registerKey() {
 string getTime() {
 	SYSTEMTIME stime;
 	GetLocalTime(&stime);
-	return string(to_string(stime.wYear) + "/" + to_string(stime.wMonth) + "/" + to_string(stime.wDay) + " " + to_string(stime.wHour) + ":" + to_string(stime.wMinute));
+	return string(to_string(stime.wYear) + "/" + 
+		to_string(stime.wMonth) + "/" + 
+		to_string(stime.wDay) + " " + 
+		to_string(stime.wHour) + ":" + 
+		to_string(stime.wMinute) + ":" +
+		to_string(stime.wSecond));
 }
 
 bool writeConfig(Value &config) {
