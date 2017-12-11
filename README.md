@@ -4,7 +4,7 @@
 
 A Saving/Loading tool for "Getting Over It With Bennet Foddy".
 
-Binary release can be found in [here](https://github.com/wtdcode/SavingOverIt/releases).
+Binary release can be found [here](https://github.com/wtdcode/SavingOverIt/releases).
 
 Just be happy :).
 
