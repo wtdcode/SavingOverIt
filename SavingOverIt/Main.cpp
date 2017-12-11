@@ -200,6 +200,9 @@ int main() {
 				cout << "[" << getTime() << "]\n";
 				cout << "load latest save\n";
 			}
+			config["index"] = index;
+			writeConfig(config);
+			break;
 		}
 	}
 	return 0;
