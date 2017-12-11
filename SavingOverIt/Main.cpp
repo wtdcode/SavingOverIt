@@ -158,6 +158,13 @@ bool readConfig(Value& config) {
 	return 1;
 }
 
+void printHelloMsg() {
+	cout << "SavingOverIt0.1.0\n"
+		<< "Press F7 to save and F8 to load.\n"
+		<< "Before loading, please quit to the main menu.\n"
+		<< "Just be happy :).\n";
+}
+
 int main() {
 	HKEY GOI_key;
 	Value save_data;
@@ -175,6 +182,7 @@ int main() {
 		cout << "[Error Code]" << GetLastError() << "\n";
 		return 0;
 	}
+	printHelloMsg();
 	index = config.get("index",0).asInt();
 	while (GetMessage(&m, NULL, NULL, NULL) != 0) {
 		switch (m.message) {
