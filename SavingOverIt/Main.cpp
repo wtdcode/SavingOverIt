@@ -148,7 +148,7 @@ bool writeConfig(Value &config) {
 bool readConfig(Value& config) {
 	const static string file_name = "config.json";
 	ifstream in(file_name, ios::in);
-	if (in.is_open()) {
+	if (!in.is_open()) {
 		config["index"] = 0;
 		writeConfig(config);
 	}
