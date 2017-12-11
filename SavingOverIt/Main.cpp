@@ -21,7 +21,7 @@ using std::cout;
 bool isExcluded(string name) {
 	// These values in my registry are inavailabe, so I can't get proper values through RegEnumValue.
 	// So I decide to exclude them from the saved values.
-	// In fact, some other values are also should be excluded, but I am too lazy :).
+	// In fact, some other values should be also excluded, but I am too lazy :).
 	static string exclude[] = { "Curvy_ControlPointSize",
 								"Curvy_OrientationLength",
 								"Curvy_SceneViewResolution",
