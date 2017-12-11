@@ -2,9 +2,11 @@
 
 ## Introduction
 
-A Saving/Loading tool for "Getting Over It With Bennet Foddy".
+A Save/Load tool for "Getting Over It With Bennet Foddy".
 
 Binary release can be found [here](https://github.com/wtdcode/SavingOverIt/releases).
+
+Getting over it with saving and loading.
 
 Just be happy :).
 
